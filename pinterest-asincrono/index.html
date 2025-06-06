@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1375/1375106.png" type="link">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeria de Imágenes</title>
+  </head>
+  <body>
+    <header>
+      <h1>Galería de Imágenes</h1>
+    </header>
+  
+    <main>
+      <!-- TOGGLE DE TEMA -->
+      <div class="theme-toggle-container">
+        <label class="switch">
+          <input type="checkbox" id="themeToggle" />
+          <span class="slider"></span>
+        </label>
+        <span class="switch-label">Oscuro</span>
+      </div>
+  
+      <!-- BÚSQUEDA -->
+      <section class="search-section">
+        <form id="searchForm" class="search-form">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Busca imágenes (ej.: montañas, playas)"
+            value="leones"
+          />
+          <button type="submit">Buscar</button>
+        </form>
+      </section>
+  
+      <!-- GALERÍA DE IMÁGENES -->
+      <section id="gallery" class="photos-grid">
+     
+      </section>
+  
+      <!-- PAGINACIÓN -->
+      <section id="pagination" class="pagination-container">
+        <button id="prevPage" disabled>← Página anterior</button>
+        <span id="pageIndicator">Página 1</span>
+        <button id="nextPage" disabled>Página siguiente →</button>
+      </section>
+    </main>
+  
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
