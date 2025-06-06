@@ -66,9 +66,9 @@ function updatePaginationControls() {
 
 /**
  * Función principal para hacer fetch a Unsplash.
- * @param {string} query — Término a buscar.
- * @param {number} page — Página a solicitar.
- * @param {boolean} forceReset — Si true, limpiamos la galería antes de pintar.
+  @param {string} query 
+  @param {number} page 
+  @param {boolean} forceReset
  */
 async function fetchPhotos(query, page = 1, forceReset = false) {
   if (isLoading) return;
